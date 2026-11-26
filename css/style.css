@@ -41,7 +41,9 @@ main {
 .card,
 .site-footer,
 .detail-hero,
-.main-content {
+.main-content,
+.contact-hero,
+.contact-content {
   padding: 24px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -101,7 +103,7 @@ main {
   font-size: var(--fs-body);
   padding: 10px;
   border-radius: var(--border-radius);
-  transition: 0.3s ease;
+  transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-links a:hover,
@@ -228,6 +230,7 @@ main {
   cursor: pointer;
   border: 1px solid var(--color-four);
   transition: 0.3s ease;
+  user-select: none;
 }
 
 .btn-solid.theme-primary {
@@ -351,7 +354,7 @@ main {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: 500px;
+  height: auto;
   border-radius: var(--border-radius);
 }
 
@@ -385,7 +388,6 @@ main {
   text-align: center;
 }
 
-
 .highlight-card p {
   font-size: var(--fs-body);
   margin-bottom: 0;
@@ -415,7 +417,6 @@ main {
   transition: 0.3s ease;
 }
 
-
 .accordion-body {
   padding: 16px;
   color: var(--color-text);
@@ -423,6 +424,81 @@ main {
 
 .accordion-body p {
   margin: 0;
+}
+
+/* Contact Page */
+
+.contact-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-content .form-label {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-content .form-control {
+  width: 100%;
+  padding: 12px;
+  color: var(--color-text);
+  background: var(--color-one);
+  border: 1px solid var(--color-four);
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: var(--fs-body);
+  transition: 0.3s ease;
+}
+
+.contact-content .form-control:hover {
+  border-color: var(--color-two);
+}
+
+.contact-content .form-control:focus {
+  border-color: var(--color-five);
+  box-shadow: 0 0 5px var(--color-five), 0 0 20px var(--color-five);
+}
+
+.contact-content textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.character-count {
+  font-size: var(--fs-body);
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.consent-field {
+  font-size: var(--fs-body);
+}
+
+.consent-field input {
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: var(--color-two);
+}
+
+.consent-field label {
+  cursor: pointer;
+}
+
+.confirmation-message {
+  padding: 16px;
+  color: var(--color-four);
+  background: var(--color-five);
+  border: 1px solid var(--color-five);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px var(--color-five), 0 0 20px var(--color-five);
 }
 
 /* Footer */
@@ -451,6 +527,11 @@ main {
   margin: 0;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-two);
+  outline-offset: 4px;
+}
+
 @media (min-width: 768px) {
   .detail-sidebar {
     position: sticky;
@@ -472,7 +553,9 @@ main {
   .sidebar,
   .card,
   .detail-hero,
-  .main-content {
+  .main-content,
+  .contact-hero,
+  .contact-content {
     padding: 16px;
   }
 
