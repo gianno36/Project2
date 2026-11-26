@@ -16,7 +16,9 @@
         <header>
             <nav class="navbar md:navbar-expand">
                 <div class="container navigation">
-                    <a class="navbar-brand brand" href="index.html">GG.</a>
+                    <a href="index.html">
+                        <img src="images/icon.png" alt="Logo" class="logo">
+                    </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#mobile-menu">
                         Menu
@@ -46,19 +48,21 @@
         </header>
 
         <main class="container py-4">
-            <section class="card p-4">
-                <h1>Sensible</h1>
-                <p class="lead">Sensible is a real-time awareness application that helps users stay informed about their surroundings. This product was made for FigBuild's 2026 competition.</p>
-                <p>All of this information was taken from my <a href="https://giuliang.github.io/Website/" target="_blank">personal website</a>.</p>
+            <section class="detail-hero">
+                <h1 class="primary-title">Sensible</h1>
+
+                <p class="lead-text">Sensible is a real-time awareness application that helps users stay informed about their surroundings. This product was made for FigBuild's 2026 competition.</p>
+
+                <p class="lead-text">All of this information was taken from my <a href="https://gaudiuhm.github.io/Website/" target="_blank" rel="noopener">personal website</a>.</p>
 
                 <div>
-                    <a class="btn-outline" href="index.html#projects">Back to Projects</a>
+                    <a class="btn-outline theme-primary" href="index.html#projects">Back to Projects</a>
                 </div>
             </section>
 
-            <section class="row g-4">
+            <section class="row g-4 detail-layout">
                 <div class="col-12 md:col-8">
-                    <article class="card p-4">
+                    <article class="main-content">
                         <h2>Project Challenges</h2>
 
                         <p><strong>Designing for an unmeasured experience.</strong> Sensory load has no established metric the way heart rate or sleep does. I had to decide how light, sound, crowd density, and heart rate could combine into one Sensory Overload Score that people could understand at a glance.</p>
@@ -68,17 +72,16 @@
                         <h2>Visual Media</h2>
 
                         <div class="d-flex flex-column gap-3">
-                            <img src="images/sensible1.svg" alt="Sensible App Screenshot" class="img-fluid">
-                            <img src="images/sensible.svg" alt="Sensible App Screenshot 2" class="img-fluid">
-                            <img src="images/sensible2.svg" alt="Sensible App Screenshot 3" class="img-fluid">
+                            <img src="images/sensible1.svg" alt="Sensible App Screenshot" class="img-fluid project-image">
+                            <img src="images/sensible.svg" alt="Sensible App Screenshot 2" class="img-fluid project-image">
+                            <img src="images/sensible2.svg" alt="Sensible App Screenshot 3" class="img-fluid project-image">
                         </div>
 
                         <h2>Results and Key Outcomes</h2>
 
                         <p>Designed and delivered a complete, interactive high-fidelity prototype in Figma in four days, from wireframes to key flows.</p>
 
-
-                        <h2>FAQ</h2>
+                        <h2>Frequently Asked Questions</h2>
 
                         <div class="accordion">
                             <details class="accordion-item" name="project-faq">
@@ -115,58 +118,39 @@
                 </div>
 
                 <div class="col-12 md:col-4">
-                    <aside class="card p-4">
-                        <h2>Project Details</h2>
+                    <aside class="sidebar detail-sidebar">
+                        <h2 class="secondary-title">Project Details</h2>
 
-                        <dl>
-                            <dt>Category</dt>
-                            <dd>UI/UX</dd>
+                        <ul class="detail-list">
+                            <li><strong>Category:</strong> UI/UX</li>
+                            <li><strong>Role:</strong> UI/UX Designer</li>
+                            <li><strong>Tools Used:</strong> Figma</li>
+                            <li><strong>Duration:</strong> 4 Days</li>
+                            <li><strong>Team Size:</strong> Solo Designer</li>
+                            <li><strong>Year:</strong> 2026</li>
+                        </ul>
 
-                            <dt>Role</dt>
-                            <dd>UI/UX Designer</dd>
+                        <h2 class="secondary-title">Project Highlights</h2>
 
-                            <dt>Tools Used</dt>
-                            <dd>Figma</dd>
-
-                            <dt>Duration</dt>
-                            <dd>4 Days</dd>
-
-                            <dt>Team Size</dt>
-                            <dd>Solo Designer</dd>
-
-                            <dt>Year</dt>
-                            <dd>2026</dd>
-                        </dl>
-
-                        <h2>Project Highlights</h2>
-
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="border rounded p-3 text-center">
-                                    <h3>4</h3>
-                                    <p>Days</p>
-                                </div>
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <h3>4</h3>
+                                <p>Days</p>
                             </div>
 
-                            <div class="col-6">
-                                <div class="border rounded p-3 text-center">
-                                    <h3>1</h3>
-                                    <p>Designer</p>
-                                </div>
+                            <div class="highlight-card">
+                                <h3>1</h3>
+                                <p>Designer</p>
                             </div>
 
-                            <div class="col-6">
-                                <div class="border rounded p-3 text-center">
-                                    <h3>2026</h3>
-                                    <p>Year</p>
-                                </div>
+                            <div class="highlight-card">
+                                <h3>2026</h3>
+                                <p>Year</p>
                             </div>
 
-                            <div class="col-6">
-                                <div class="border rounded p-3 text-center">
-                                    <h3>UI/UX</h3>
-                                    <p>Category</p>
-                                </div>
+                            <div class="highlight-card">
+                                <h3>UI/UX</h3>
+                                <p>Category</p>
                             </div>
                         </div>
                     </aside>
