@@ -501,6 +501,31 @@ main {
   box-shadow: 0 0 5px var(--color-five), 0 0 20px var(--color-five);
 }
 
+/* Form Validation */
+
+.contact-content .form-control.is-invalid,
+.consent-field .check.is-invalid {
+  border-color: #b42318;
+}
+
+.contact-content .form-control.is-invalid:focus {
+  border-color: #b42318;
+  box-shadow: 0 0 5px #b42318;
+}
+
+.contact-content .invalid-feedback {
+  display: block;
+  color: #b42318;
+  font-size: var(--fs-body);
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.contact-content .invalid-feedback[hidden],
+.confirmation-message[hidden] {
+  display: none;
+}
+
 /* Footer */
 
 .site-footer {
